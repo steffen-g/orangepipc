@@ -1,0 +1,9 @@
+buildroot/target/dragonboard/rootfs.ext4
+buildroot/target/dragonboard/src/lib/libscript.a
+tools/pack/chips/sun6i/bin/u-boot-sun6i.bin
+linux-3.3/arch/arm/mach-sun6i/dram-freq/mdfs/mdfs.code
+linux-3.4/modules/eurasia_km/eurasiacon/binary2_sunxi_android_release/
+tools/pack/sun6i_android_mars*.rar
+tools/pack/sun6i_android_mars*.tar.gz
+.buildconfig
+out/
