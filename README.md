@@ -1,6 +1,6 @@
 #Kernel and U-Boot for Orange Pi PC with Allwinner H3 
 
-If someone finds out why HDMI is not working, please let me know.
+If someone finds out why HDMI is not working, please let me know. --> HDMI is now working, but not with my HDMI DVI adapter and LCD screen.
 
 ###0. Prerequisites
 arm-linux-gnueabihf- and arm-none-eabi- toolchain has to be installed.

@@ -87,6 +87,7 @@ led_state = 0
 [boot_init_gpio]
 used	=	1
 gpio0	=  port:PA15<1><default><default><1>
+gpio1	=  port:PG11<1><default><default><1>
 
 ;----------------------------------------------------------------------------------
 ;	used: 模块使能端     1：开启模块   0：关闭模块
@@ -225,7 +226,7 @@ cpu_freq            = 48
 pll_ratio           = 0x111
 dram_selfresh_en    = 1
 dram_freq           = 36
-wakeup_src0         =
+wakeup_src0         = port:PL03<6><default><default><0>
 ;wakeup_src_wl       = port:PL04<6><default><default><0>
 ;wakeup_src_bt       = port:PL03<6><default><default><0>
 
@@ -324,9 +325,11 @@ manual_cs     = 0
 ;----------------------------------------------------------------------------------
 [gpio_para]
 gpio_used       = 1
-gpio_num        = 2
+gpio_num        = 4
 gpio_pin_1      = port:PL10<1><default><default><1>
 gpio_pin_2      = port:PA15<1><default><default><0>
+gpio_pin_3      = port:PL3<1><default><default><0>
+gpio_pin_4      = port:PL4<1><default><default><0>
 
 [led_assign]
 normal_led      = "gpio_pin_2"
@@ -442,12 +445,12 @@ disp_init_enable         = 1
 disp_mode                = 0
 
 screen0_output_type      = 3
-screen0_output_mode      = 4
+screen0_output_mode      = 10
 
 screen1_output_type      = 3
-screen1_output_mode      = 4
+screen1_output_mode      = 10
 
-fb0_format               = 0
+fb0_format               = 10
 fb0_width                = 0
 fb0_height               = 0
 
@@ -629,8 +632,8 @@ vip_dev1_af_pwdn         =
 ;
 ;--------------------------------------------------------------------------------
 [tvout_para]
-tvout_used          =
-tvout_channel_num   =
+tvout_used          = 
+tvout_channel_num   =  
 tv_en               =
 
 [tvin_para]
@@ -1074,7 +1077,7 @@ pmu_level1        = 01100
 ;extremity_freq = 1344000000
 max_freq = 1536000000
 ;max_freq = 1296000000
-min_freq = 60000000
+min_freq = 408000000
 
 LV_count = 8
 
@@ -1094,13 +1097,13 @@ LV5_freq = 648000000
 LV5_volt = 1040
 
 LV6_freq = 0
-LV6_volt = 1040
+LV6_volt = 900
 
 LV7_freq = 0
-LV7_volt = 1040
+LV7_volt = 900
 
 LV8_freq = 0
-LV8_volt = 1040
+LV8_volt = 900
 
 [gpu_dvfs_table]
 
@@ -1205,7 +1208,7 @@ tsc_d7				= port:PE11<3><default><default><default>
 ;--------------------------------------------------------------------------------
 [gpio_power_key]
 key_used				= 0
-key_io					= port:PL04<6><default><default><0>
+key_io					= port:PL03<6><default><default><0>
 
 ;----------------------------------------------------------------------------------
 ; key para
